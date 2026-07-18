@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="الموقع الرسمي للدكتورة نيرة هاني - استشاري الغدد الصماء والسكر والتمثيل الغذائي. عيادات في المعادي، الرحاب، الشيخ زايد، والدقي.">
+  <meta name="keywords" content="دكتورة نيرة هاني, غدد صماء, سكر, تمثيل غذائي, عيادة, Naira Hany, Endocrinology, Diabetes">
+  <meta property="og:title" content="د. نيرة هاني | استشاري الغدد الصماء والسكر">
+  <meta property="og:description" content="استشاري الغدد الصماء والسكر والتمثيل الغذائي - حاصلة على البورد الأوروبي ودكتوراه من جامعة عين شمس">
+  <meta property="og:type" content="website">
+  <title>د. نيرة هاني | استشاري الغدد الصماء والسكر والتمثيل الغذائي</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="logo.jpg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =====================================================
+       NAVBAR
+  ===================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+
+      <!-- Brand -->
+      <a href="#hero" class="nav-brand">
+        <img src="logo.jpg" alt="شعار د. نيرة هاني" class="nav-logo">
+        <span class="nav-name" data-i18n="navBrand">د. نيرة هاني</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links">
+        <li><a href="#about" data-i18n="navAbout">عن الدكتورة</a></li>
+        <li><a href="#credentials" data-i18n="navCredentials">المؤهلات</a></li>
+        <li><a href="#clinics" data-i18n="navClinics">العيادات</a></li>
+        <li><a href="#contact" data-i18n="navContact">تواصل معنا</a></li>
+      </ul>
+
+      <!-- Actions -->
+      <div class="nav-actions">
+        <!-- Language Toggle -->
+        <div class="lang-toggle" id="langToggle" role="group" aria-label="Language selector">
+          <button class="lang-btn active" id="btnAr" onclick="setLang('ar')" aria-pressed="true">AR</button>
+          <button class="lang-btn" id="btnEn" onclick="setLang('en')" aria-pressed="false">EN</button>
+        </div>
+
+        <!-- Book Now CTA -->
+        <a href="#clinics" class="nav-cta" data-i18n="navCTA">احجز الآن</a>
+      </div>
+
+      <!-- Hamburger (Mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <button class="mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
+    <ul class="mobile-menu-links">
+      <li><a href="#about" data-i18n="navAbout">عن الدكتورة</a></li>
+      <li><a href="#credentials" data-i18n="navCredentials">المؤهلات</a></li>
+      <li><a href="#clinics" data-i18n="navClinics">العيادات</a></li>
+      <li><a href="#contact" data-i18n="navContact">تواصل معنا</a></li>
+    </ul>
+    <div style="display:flex;gap:12px;flex-direction:column;align-items:center;">
+      <a href="#clinics" class="btn btn-primary" style="min-width:200px;" data-i18n="navCTA">احجز الآن</a>
+      <a href="https://wa.me/201005218186" target="_blank" rel="noopener" class="btn btn-teal" style="min-width:200px;" data-i18n="heroWA">تواصل عبر واتساب</a>
+    </div>
+  </div>
+
+
+  <!-- =====================================================
+       HERO SECTION
+  ===================================================== -->
+  <section class="hero" id="hero" aria-label="Hero section">
+    <!-- Background orbs -->
+    <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-3" aria-hidden="true"></div>
+
+    <div class="hero-container">
+      <!-- Content -->
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <svg class="hero-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+          </svg>
+          <span data-i18n="heroEyebrow">استشاري متخصص معتمد دولياً</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="gradient-text" data-i18n="heroTitle">د. نيرة هاني</span>
+        </h1>
+
+        <p class="hero-subtitle" data-i18n="heroSubtitle">
+          استشاري الغدد الصماء والسكر والتمثيل الغذائي
+        </p>
+
+        <!-- Credential Badges -->
+        <div class="hero-badges">
+          <span class="hero-badge">
+            <svg class="hero-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+            <span data-i18n="badge1">حاصلة على البورد الأوروبي (EBEEDM)</span>
+          </span>
+          <span class="hero-badge">
+            <svg class="hero-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+            </svg>
+            <span data-i18n="badge2">دكتوراه من جامعة عين شمس</span>
+          </span>
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="hero-actions">
+          <a href="https://wa.me/201005218186"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="btn btn-teal"
+             id="hero-whatsapp-btn">
+            <!-- WhatsApp SVG -->
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.528 2.01 14.069.993 11.998.993c-5.462 0-9.902 4.375-9.906 9.8-.001 1.748.477 3.454 1.385 4.965l-.982 3.585 3.654-.946zm11.518-6.113c-.3-.15-1.774-.875-2.048-.974-.275-.1-.475-.15-.674.15-.2.3-.775.975-.95 1.174-.175.2-.35.225-.65.075-1.025-.512-1.794-.94-2.52-2.185-.183-.317-.183-.655.075-.9.225-.225.425-.5.5-.675.075-.175.037-.325-.013-.425-.05-.1-4.75-1.125-5.65-1.325-.375-.087-.65.1-.75.325-.1.225-.5 1.05-.5 2.55s1.075 2.925 1.225 3.125c.15.2 2.1 3.2 5.075 4.5.72.31 1.285.5 1.714.64.726.23 1.386.2 1.905.12.58-.09 1.774-.725 2.024-1.399.25-.675.25-1.25.175-1.399-.075-.15-.275-.225-.575-.375z"/>
+            </svg>
+            <span data-i18n="heroWA">احجز عبر واتساب</span>
+          </a>
+
+          <a href="tel:+201551957119"
+             class="btn btn-outline-purple"
+             id="hero-call-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+            </svg>
+            <span data-i18n="heroCall">اتصل مباشرة</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Doctor Image -->
+      <div class="hero-image-wrap">
+        <div class="hero-image-glow" aria-hidden="true"></div>
+        <div class="hero-image-ring">
+          <div class="hero-image-inner">
+            <img src="logo.jpg" alt="الدكتورة نيرة هاني - استشاري الغدد الصماء" class="hero-image">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="hero-scroll" aria-hidden="true">
+      <div class="hero-scroll-icon">
+        <div class="hero-scroll-dot"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       ABOUT & CREDENTIALS SECTION
+  ===================================================== -->
+  <section class="about-section" id="about" aria-labelledby="about-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow" data-i18n="aboutEyebrow">من نحن</span>
+        <h2 class="section-title" id="about-title">
+          <span data-i18n="aboutTitle">عن الدكتورة</span> <span data-i18n="aboutTitleHighlight">نيرة هاني</span>
+        </h2>
+        <div class="title-line"></div>
+        <p class="section-subtitle" data-i18n="aboutSubtitle">
+          خبرة طبية راسخة ومؤهلات دولية في مجال الغدد الصماء والسكر
+        </p>
+      </div>
+
+      <!-- Credentials Cards Grid -->
+      <div class="credentials-grid" id="credentials">
+        <!-- Card 1: Experience -->
+        <div class="cred-card reveal" data-delay="100">
+          <div class="cred-icon-wrap purple">🏥</div>
+          <h3 class="cred-title" data-i18n="credExp">الخبرة المهنية</h3>
+          <p class="cred-desc" data-i18n="credExpDesc">
+            استشاري بمجموعة مستشفيات كليوباترا ومستشفى القوات الجوية التخصصي
+          </p>
+        </div>
+
+        <!-- Card 2: Academic -->
+        <div class="cred-card reveal" data-delay="200">
+          <div class="cred-icon-wrap magenta">🎓</div>
+          <h3 class="cred-title" data-i18n="credAcad">المؤهلات الأكاديمية</h3>
+          <p class="cred-desc" data-i18n="credAcadDesc">
+            دكتوراه وماجستير من جامعة عين شمس، ونيابة بالمعهد القومي للسكر والغدد الصماء (NIDE)
+          </p>
+        </div>
+
+        <!-- Card 3: Insulin Pump -->
+        <div class="cred-card reveal" data-delay="300">
+          <div class="cred-icon-wrap teal">💉</div>
+          <h3 class="cred-title" data-i18n="credSkill1">مضخات الإنسولين</h3>
+          <p class="cred-desc" data-i18n="credSkill1Desc">
+            مدرب معتمد لتركيب مضخات الإنسولين من شركة ميدترونيك
+          </p>
+        </div>
+
+        <!-- Card 4: Thyroid Ultrasound -->
+        <div class="cred-card reveal" data-delay="400">
+          <div class="cred-icon-wrap purple">🔬</div>
+          <h3 class="cred-title" data-i18n="credSkill2">سونار الغدة الدرقية</h3>
+          <p class="cred-desc" data-i18n="credSkill2Desc">
+            متخصصة في الفحص المتقدم للغدة الدرقية بالسونار
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       CLINICS SECTION
+  ===================================================== -->
+  <section class="clinics-section" id="clinics" aria-labelledby="clinics-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow" data-i18n="clinicsEyebrow">تواجدنا</span>
+        <h2 class="section-title" id="clinics-title">
+          <span data-i18n="clinicsTitle">عياداتنا</span> <span data-i18n="clinicsTitleHighlight">الأربعة</span>
+        </h2>
+        <div class="title-line"></div>
+        <p class="section-subtitle" data-i18n="clinicsSubtitle">
+          تفضل بزيارتنا في الفرع الأقرب إليك
+        </p>
+      </div>
+
+      <div class="clinics-grid">
+
+        <!-- Clinic 1: Zahraa El Maadi -->
+        <div class="clinic-card reveal" data-delay="100">
+          <div class="clinic-card-header">
+            <p class="clinic-number" data-i18n="clinicLabel">عيادة 01</p>
+            <h3 class="clinic-name" data-i18n="clinic1Name">عيادة زهراء المعادي</h3>
+          </div>
+          <div class="clinic-card-body">
+            <div class="clinic-info-row">
+              <div class="clinic-info-icon addr">📍</div>
+              <div>
+                <p class="clinic-info-label" data-i18n="addrLabel">العنوان</p>
+                <p class="clinic-info-text" data-i18n="clinic1Addr">
+                  زهراء المعادي، برج منصور أمام مول hub50، الدور الثالث (الدخول من الدور الثاني)
+                </p>
+              </div>
+            </div>
+            <div class="clinic-info-row">
+              <div class="clinic-info-icon time">🕕</div>
+              <div>
+                <p class="clinic-info-label" data-i18n="timeLabel">المواعيد</p>
+                <p class="clinic-info-time" data-i18n="clinic1Time">السبت والثلاثاء 6 مساءً</p>
+              </div>
+            </div>
+          </div>
+          <div class="clinic-card-footer">
+            <a href="https://maps.app.goo.gl/iQbAX5wqLvK8kBAH8"
+               target="_blank" rel="noopener noreferrer"
+               class="btn btn-map"
+               id="map-clinic-1">
+              🗺️ <span data-i18n="btnMap">الموقع على الخريطة</span>
+            </a>
+            <a href="tel:+201005218186" class="btn btn-call" id="call-clinic-1">
+              📞 <span data-i18n="btnCall">اتصل بالعيادة</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Clinic 2: Al Rehab -->
+        <div class="clinic-card reveal" data-delay="200">
+          <div class="clinic-card-header">
+            <p class="clinic-number" data-i18n="clinicLabel">عيادة 02</p>
+            <h3 class="clinic-name" data-i18n="clinic2Name">عيادة الرحاب</h3>
+          </div>
+          <div class="clinic-card-body">
+            <div class="clinic-info-row">
+              <div class="clinic-info-icon addr">📍</div>
+              <div>
+                <p class="clinic-info-label" data-i18n="addrLabel">العنوان</p>
+                <p class="clinic-info-text" data-i18n="clinic2Addr">
+                  Gateway mall، مبنى العيادات D1، الرحاب، الدور الثاني عيادة 213
+                </p>
+              </div>
+            </div>
+            <div class="clinic-info-row">
+              <div class="clinic-info-icon time">🕓</div>
+              <div>
+                <p class="clinic-info-label" data-i18n="timeLabel">المواعيد</p>
+                <p class="clinic-info-time" data-i18n="clinic2Time">الأربعاء 4 مساءً</p>
+              </div>
+            </div>
+          </div>
+          <div class="clinic-card-footer">
+            <a href="https://maps.app.goo.gl/ELKxq9GQseGjT4ou6"
+               target="_blank" rel="noopener noreferrer"
+               class="btn btn-map"
+               id="map-clinic-2">
+              🗺️ <span data-i18n="btnMap">الموقع على الخريطة</span>
+            </a>
+            <a href="tel:+201005218186" class="btn btn-call" id="call-clinic-2">
+              📞 <span data-i18n="btnCall">اتصل بالعيادة</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Clinic 3: Sheikh Zayed -->
+        <div class="clinic-card reveal" data-delay="300">
+          <div class="clinic-card-header">
+            <p class="clinic-number" data-i18n="clinicLabel">عيادة 03</p>
+            <h3 class="clinic-name" data-i18n="clinic3Name">عيادة الشيخ زايد</h3>
+          </div>
+          <div class="clinic-card-body">
+            <div class="clinic-info-row">
+              <div class="clinic-info-icon addr">📍</div>
+              <div>
+                <p class="clinic-info-label" data-i18n="addrLabel">العنوان</p>
+                <p class="clinic-info-text" data-i18n="clinic3Addr">
+                  مول زايد بلازا بعد مول ذا جيت، قدام المعهد الأزهري، الدور الثاني عيادة بيبي هب
+                </p>
+              </div>
+            </div>
+            <div class="clinic-info-row">
+              <div class="clinic-info-icon time">🕘</div>
+              <div>
+                <p class="clinic-info-label" data-i18n="timeLabel">المواعيد</p>
+                <p class="clinic-info-time" data-i18n="clinic3Time">الأحد 9 مساءً</p>
+              </div>
+            </div>
+          </div>
+          <div class="clinic-card-footer">
+            <a href="https://maps.app.goo.gl/mXKNKPGH8z1semzW7?g_st=awb"
+               target="_blank" rel="noopener noreferrer"
+               class="btn btn-map"
+               id="map-clinic-3">
+              🗺️ <span data-i18n="btnMap">الموقع على الخريطة</span>
+            </a>
+            <a href="tel:+201005218186" class="btn btn-call" id="call-clinic-3">
+              📞 <span data-i18n="btnCall">اتصل بالعيادة</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Clinic 4: Dokki/Mohandeseen -->
+        <div class="clinic-card reveal" data-delay="400">
+          <div class="clinic-card-header">
+            <p class="clinic-number" data-i18n="clinicLabel">عيادة 04</p>
+            <h3 class="clinic-name" data-i18n="clinic4Name">عيادة الدقي والمهندسين</h3>
+          </div>
+          <div class="clinic-card-body">
+            <div class="clinic-info-row">
+              <div class="clinic-info-icon addr">📍</div>
+              <div>
+                <p class="clinic-info-label" data-i18n="addrLabel">العنوان</p>
+                <p class="clinic-info-text" data-i18n="clinic4Addr">
+                  97 شارع التحرير، برج جاد الطبي، الدور الخامس
+                </p>
+              </div>
+            </div>
+            <div class="clinic-info-row">
+              <div class="clinic-info-icon time">🕓</div>
+              <div>
+                <p class="clinic-info-label" data-i18n="timeLabel">المواعيد</p>
+                <p class="clinic-info-time" data-i18n="clinic4Time">الإثنين 4 مساءً</p>
+              </div>
+            </div>
+          </div>
+          <div class="clinic-card-footer">
+            <a href="https://maps.app.goo.gl/JVpZkHVeDCLmaJWD8"
+               target="_blank" rel="noopener noreferrer"
+               class="btn btn-map"
+               id="map-clinic-4">
+              🗺️ <span data-i18n="btnMap">الموقع على الخريطة</span>
+            </a>
+            <a href="tel:+201005218186" class="btn btn-call" id="call-clinic-4">
+              📞 <span data-i18n="btnCall">اتصل بالعيادة</span>
+            </a>
+          </div>
+        </div>
+
+      </div><!-- /clinics-grid -->
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       FOOTER
+  ===================================================== -->
+  <footer class="footer" id="contact" aria-label="Footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand Column -->
+        <div class="reveal">
+          <img src="logo.jpg" alt="د. نيرة هاني" class="footer-brand-logo">
+          <h3 class="footer-brand-name" data-i18n="footerBrand">د. نيرة هاني</h3>
+          <p class="footer-brand-tagline" data-i18n="footerTagline">
+            استشاري الغدد الصماء والسكر والتمثيل الغذائي — رعاية طبية راقية في قلب مصر.
+          </p>
+        </div>
+
+        <!-- Contact Column -->
+        <div class="reveal" data-delay="100">
+          <p class="footer-heading" data-i18n="footerContactTitle">تواصل معنا</p>
+
+          <a href="https://wa.me/201005218186"
+             target="_blank" rel="noopener noreferrer"
+             class="footer-contact-item"
+             id="footer-whatsapp">
+            <div class="footer-contact-icon whatsapp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="#14b8a6" aria-hidden="true">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.528 2.01 14.069.993 11.998.993c-5.462 0-9.902 4.375-9.906 9.8-.001 1.748.477 3.454 1.385 4.965l-.982 3.585 3.654-.946zm11.518-6.113c-.3-.15-1.774-.875-2.048-.974-.275-.1-.475-.15-.674.15-.2.3-.775.975-.95 1.174-.175.2-.35.225-.65.075-1.025-.512-1.794-.94-2.52-2.185-.183-.317-.183-.655.075-.9.225-.225.425-.5.5-.675.075-.175.037-.325-.013-.425-.05-.1-4.75-1.125-5.65-1.325-.375-.087-.65.1-.75.325-.1.225-.5 1.05-.5 2.55s1.075 2.925 1.225 3.125c.15.2 2.1 3.2 5.075 4.5.72.31 1.285.5 1.714.64.726.23 1.386.2 1.905.12.58-.09 1.774-.725 2.024-1.399.25-.675.25-1.25.175-1.399-.075-.15-.275-.225-.575-.375z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="footer-contact-label" data-i18n="footerWALabel">واتساب</p>
+              <p class="footer-contact-number">01005218186</p>
+            </div>
+          </a>
+
+          <a href="tel:+201551957119" class="footer-contact-item" id="footer-phone">
+            <div class="footer-contact-icon phone">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9c27b0" stroke-width="2" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="footer-contact-label" data-i18n="footerPhoneLabel">موبايل</p>
+              <p class="footer-contact-number">01551957119</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Quick Links Column -->
+        <div class="reveal" data-delay="200">
+          <p class="footer-heading" data-i18n="footerLinksTitle">روابط سريعة</p>
+          <ul class="footer-quick-links">
+            <li><a href="#about"><span class="footer-arrow"></span> <span data-i18n="navAbout">عن الدكتورة</span></a></li>
+            <li><a href="#credentials"><span class="footer-arrow"></span> <span data-i18n="navCredentials">المؤهلات</span></a></li>
+            <li><a href="#clinics"><span class="footer-arrow"></span> <span data-i18n="navClinics">العيادات</span></a></li>
+            <li><a href="https://wa.me/201005218186" target="_blank" rel="noopener"><span class="footer-arrow"></span> <span data-i18n="navCTA">احجز الآن</span></a></li>
+          </ul>
+        </div>
+
+      </div><!-- /footer-grid -->
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          © 2026 <strong data-i18n="footerBrand">د. نيرة هاني</strong>. <span data-i18n="footerCopy">جميع الحقوق محفوظة.</span>
+        </p>
+        <div class="footer-socials">
+          <a href="https://wa.me/201005218186"
+             target="_blank" rel="noopener noreferrer"
+             class="footer-social-btn"
+             aria-label="WhatsApp"
+             id="footer-social-wa">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24z"/>
+            </svg>
+          </a>
+          <a href="tel:+201551957119"
+             class="footer-social-btn"
+             aria-label="Phone"
+             id="footer-social-phone">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- =====================================================
+       FLOATING WHATSAPP BUTTON
+  ===================================================== -->
+  <a href="https://wa.me/201005218186"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="floating-wa"
+     aria-label="تواصل عبر واتساب"
+     id="floating-whatsapp-btn">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.965C16.528 2.01 14.069.993 11.998.993c-5.462 0-9.902 4.375-9.906 9.8-.001 1.748.477 3.454 1.385 4.965l-.982 3.585 3.654-.946zm11.518-6.113c-.3-.15-1.774-.875-2.048-.974-.275-.1-.475-.15-.674.15-.2.3-.775.975-.95 1.174-.175.2-.35.225-.65.075-1.025-.512-1.794-.94-2.52-2.185-.183-.317-.183-.655.075-.9.225-.225.425-.5.5-.675.075-.175.037-.325-.013-.425-.05-.1-4.75-1.125-5.65-1.325-.375-.087-.65.1-.75.325-.1.225-.5 1.05-.5 2.55s1.075 2.925 1.225 3.125c.15.2 2.1 3.2 5.075 4.5.72.31 1.285.5 1.714.64.726.23 1.386.2 1.905.12.58-.09 1.774-.725 2.024-1.399.25-.675.25-1.25.175-1.399-.075-.15-.275-.225-.575-.375z"/>
+    </svg>
+  </a>
+
+
+  <!-- =====================================================
+       JAVASCRIPT
+  ===================================================== -->
+  <script>
+    /* ============================================================
+       TRANSLATION DICTIONARY
+    ============================================================ */
+    const translations = {
+      ar: {
+        // Meta / Title
+        pageTitle: 'د. نيرة هاني | استشاري الغدد الصماء والسكر والتمثيل الغذائي',
+
+        // Navbar
+        navBrand: 'د. نيرة هاني',
+        navAbout: 'عن الدكتورة',
+        navCredentials: 'المؤهلات',
+        navClinics: 'العيادات',
+        navContact: 'تواصل معنا',
+        navCTA: 'احجز الآن',
+
+        // Hero
+        heroEyebrow: 'استشاري متخصص معتمد دولياً',
+        heroTitle: 'د. نيرة هاني',
+        heroSubtitle: 'استشاري الغدد الصماء والسكر والتمثيل الغذائي',
+        badge1: 'حاصلة على البورد الأوروبي (EBEEDM)',
+        badge2: 'دكتوراه من جامعة عين شمس',
+        heroWA: 'احجز عبر واتساب',
+        heroCall: 'اتصل مباشرة',
+
+        // About
+        aboutEyebrow: 'من نحن',
+        aboutTitle: 'عن الدكتورة',
+        aboutTitleHighlight: 'نيرة هاني',
+        aboutSubtitle: 'خبرة طبية راسخة ومؤهلات دولية في مجال الغدد الصماء والسكر',
+
+        // Credentials
+        credExp: 'الخبرة المهنية',
+        credExpDesc: 'استشاري بمجموعة مستشفيات كليوباترا ومستشفى القوات الجوية التخصصي',
+        credAcad: 'المؤهلات الأكاديمية',
+        credAcadDesc: 'دكتوراه وماجستير من جامعة عين شمس، ونيابة بالمعهد القومي للسكر والغدد الصماء (NIDE)',
+        credSkill1: 'مضخات الإنسولين',
+        credSkill1Desc: 'مدرب معتمد لتركيب مضخات الإنسولين من شركة ميدترونيك',
+        credSkill2: 'سونار الغدة الدرقية',
+        credSkill2Desc: 'متخصصة في الفحص المتقدم للغدة الدرقية بالسونار',
+
+        // Clinics
+        clinicsEyebrow: 'تواجدنا',
+        clinicsTitle: 'عياداتنا',
+        clinicsTitleHighlight: 'الأربعة',
+        clinicsSubtitle: 'تفضل بزيارتنا في الفرع الأقرب إليك',
+        clinicLabel: 'عيادة',
+        addrLabel: 'العنوان',
+        timeLabel: 'المواعيد',
+        btnMap: 'الموقع على الخريطة',
+        btnCall: 'اتصل بالعيادة',
+
+        // Clinic details
+        clinic1Name: 'عيادة زهراء المعادي',
+        clinic1Addr: 'زهراء المعادي، برج منصور أمام مول hub50، الدور الثالث (الدخول من الدور الثاني)',
+        clinic1Time: 'السبت والثلاثاء 6 مساءً',
+
+        clinic2Name: 'عيادة الرحاب',
+        clinic2Addr: 'Gateway mall، مبنى العيادات D1، الرحاب، الدور الثاني عيادة 213',
+        clinic2Time: 'الأربعاء 4 مساءً',
+
+        clinic3Name: 'عيادة الشيخ زايد',
+        clinic3Addr: 'مول زايد بلازا بعد مول ذا جيت، قدام المعهد الأزهري، الدور الثاني عيادة بيبي هب',
+        clinic3Time: 'الأحد 9 مساءً',
+
+        clinic4Name: 'عيادة الدقي والمهندسين',
+        clinic4Addr: '97 شارع التحرير، برج جاد الطبي، الدور الخامس',
+        clinic4Time: 'الإثنين 4 مساءً',
+
+        // Footer
+        footerBrand: 'د. نيرة هاني',
+        footerTagline: 'استشاري الغدد الصماء والسكر والتمثيل الغذائي — رعاية طبية راقية في قلب مصر.',
+        footerContactTitle: 'تواصل معنا',
+        footerWALabel: 'واتساب',
+        footerPhoneLabel: 'موبايل',
+        footerLinksTitle: 'روابط سريعة',
+        footerCopy: 'جميع الحقوق محفوظة.',
+      },
+
+      en: {
+        // Meta / Title
+        pageTitle: 'Dr. Naira Hany | Consultant Endocrinologist, Diabetes & Metabolism',
+
+        // Navbar
+        navBrand: 'Dr. Naira Hany',
+        navAbout: 'About',
+        navCredentials: 'Credentials',
+        navClinics: 'Clinics',
+        navContact: 'Contact',
+        navCTA: 'Book Now',
+
+        // Hero
+        heroEyebrow: 'Internationally Certified Specialist',
+        heroTitle: 'Dr. Naira Hany',
+        heroSubtitle: 'Consultant of Endocrinology, Diabetes, and Metabolism',
+        badge1: 'European Board Certified (EBEEDM)',
+        badge2: 'MD, Ain Shams University',
+        heroWA: 'Book via WhatsApp',
+        heroCall: 'Direct Call',
+
+        // About
+        aboutEyebrow: 'About Us',
+        aboutTitle: 'About',
+        aboutTitleHighlight: 'Dr. Naira Hany',
+        aboutSubtitle: 'Established medical expertise with international credentials in Endocrinology & Diabetes',
+
+        // Credentials
+        credExp: 'Professional Experience',
+        credExpDesc: 'Consultant at Cleopatra Hospitals Group & Air Force Specialized Hospital',
+        credAcad: 'Academic Qualifications',
+        credAcadDesc: 'MD & MSc from Ain Shams University. Residency at the National Institute of Diabetes and Endocrinology (NIDE)',
+        credSkill1: 'Insulin Pump Training',
+        credSkill1Desc: 'Certified Medtronic Insulin Pump Trainer',
+        credSkill2: 'Thyroid Ultrasound',
+        credSkill2Desc: 'Advanced Thyroid Ultrasound Specialist',
+
+        // Clinics
+        clinicsEyebrow: 'Our Locations',
+        clinicsTitle: 'Our',
+        clinicsTitleHighlight: 'Four Clinics',
+        clinicsSubtitle: 'Visit the clinic nearest to you',
+        clinicLabel: 'Clinic',
+        addrLabel: 'Address',
+        timeLabel: 'Schedule',
+        btnMap: 'View on Map',
+        btnCall: 'Call Clinic',
+
+        // Clinic details
+        clinic1Name: 'Zahraa El Maadi Clinic',
+        clinic1Addr: 'Mansour Tower, In front of hub50 mall, 3rd floor (Entrance from 2nd floor)',
+        clinic1Time: 'Sat & Tue 6:00 PM',
+
+        clinic2Name: 'Al Rehab Clinic',
+        clinic2Addr: 'Gateway Mall, Clinics Building D1, Al Rehab, 2nd floor, Clinic 213',
+        clinic2Time: 'Wednesday 4:00 PM',
+
+        clinic3Name: 'Sheikh Zayed Clinic',
+        clinic3Addr: 'Zayed Plaza Mall, after The Gate Mall, 2nd floor, Baby Hub Clinic',
+        clinic3Time: 'Sunday 9:00 PM',
+
+        clinic4Name: 'Dokki / Mohandeseen Clinic',
+        clinic4Addr: '97 El Tahrir St, Gad Medical Tower, 5th floor',
+        clinic4Time: 'Monday 4:00 PM',
+
+        // Footer
+        footerBrand: 'Dr. Naira Hany',
+        footerTagline: 'Consultant Endocrinologist, Diabetes & Metabolism — Premium medical care in the heart of Egypt.',
+        footerContactTitle: 'Contact Us',
+        footerWALabel: 'WhatsApp',
+        footerPhoneLabel: 'Mobile',
+        footerLinksTitle: 'Quick Links',
+        footerCopy: 'All rights reserved.',
+      }
+    };
+
+    /* ============================================================
+       LANGUAGE SYSTEM
+    ============================================================ */
+    let currentLang = localStorage.getItem('lang') || 'ar';
+
+    function setLang(lang) {
+      currentLang = lang;
+      localStorage.setItem('lang', lang);
+
+      const html = document.documentElement;
+      html.lang = lang;
+      html.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+      // Update all translatable elements
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+          el.textContent = translations[lang][key];
+        }
+      });
+
+      // Update page title
+      document.title = translations[lang].pageTitle;
+
+      // Update meta description
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) {
+        metaDesc.content = lang === 'ar'
+          ? 'الموقع الرسمي للدكتورة نيرة هاني - استشاري الغدد الصماء والسكر والتمثيل الغذائي. عيادات في المعادي، الرحاب، الشيخ زايد، والدقي.'
+          : 'Official website of Dr. Naira Hany — Consultant of Endocrinology, Diabetes & Metabolism. Clinics in Maadi, Rehab, Sheikh Zayed, and Dokki.';
+      }
+
+      // Update language toggle buttons
+      document.getElementById('btnAr').classList.toggle('active', lang === 'ar');
+      document.getElementById('btnEn').classList.toggle('active', lang === 'en');
+      document.getElementById('btnAr').setAttribute('aria-pressed', lang === 'ar');
+      document.getElementById('btnEn').setAttribute('aria-pressed', lang === 'en');
+
+      // Update font family
+      document.body.style.fontFamily = lang === 'ar'
+        ? "'Cairo', 'Segoe UI', sans-serif"
+        : "'Outfit', 'Inter', sans-serif";
+    }
+
+    // Initialize on load
+    document.addEventListener('DOMContentLoaded', () => {
+      setLang(currentLang);
+    });
+
+
+    /* ============================================================
+       NAVBAR SCROLL BEHAVIOR
+    ============================================================ */
+    const navbar = document.getElementById('navbar');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    }, { passive: true });
+
+
+    /* ============================================================
+       MOBILE MENU
+    ============================================================ */
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileClose = document.getElementById('mobileClose');
+
+    function openMenu() {
+      mobileMenu.classList.add('open');
+      hamburger.classList.add('open');
+      hamburger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', () => {
+      if (mobileMenu.classList.contains('open')) closeMenu();
+      else openMenu();
+    });
+
+    mobileClose.addEventListener('click', closeMenu);
+
+    // Close on link click
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+
+    // Close on outside click
+    mobileMenu.addEventListener('click', (e) => {
+      if (e.target === mobileMenu) closeMenu();
+    });
+
+    // Close on Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mobileMenu.classList.contains('open')) closeMenu();
+    });
+
+
+    /* ============================================================
+       SCROLL REVEAL ANIMATION (IntersectionObserver)
+    ============================================================ */
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          revealObserver.unobserve(entry.target); // Animate only once
+        }
+      });
+    }, {
+      threshold: 0.12,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    document.querySelectorAll('.reveal').forEach(el => {
+      revealObserver.observe(el);
+    });
+
+
+    /* ============================================================
+       ACTIVE NAV LINK HIGHLIGHT (Scroll-spy)
+    ============================================================ */
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a, .mobile-menu-links a');
+
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute('id');
+          navLinks.forEach(link => {
+            link.style.fontWeight = link.getAttribute('href') === `#${id}` ? '700' : '';
+            link.style.color = '';
+          });
+        }
+      });
+    }, {
+      threshold: 0.3
+    });
+
+    sections.forEach(section => sectionObserver.observe(section));
+
+
+    /* ============================================================
+       SMOOTH SCROLL for all anchor links
+    ============================================================ */
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href === '#') return;
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          const offset = 80; // navbar height
+          const top = target.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      });
+    });
+
+
+    /* ============================================================
+       CLINIC NUMBER LABELS (01, 02, 03, 04)
+    ============================================================ */
+    // Handled purely via data-i18n with "clinicLabel" key; numbers are hardcoded in HTML.
+
+  </script>
+</body>
+</html>
