@@ -808,7 +808,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Hero scroll indicator */
 .hero-scroll {
   position: absolute;
-  bottom: 32px;
+  bottom: 12px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
