@@ -1294,6 +1294,118 @@ h1, h2, h3, h4, h5, h6 {
   50% { transform: translateY(-6px); }
 }
 
+/* ---------- CREDENTIAL LIST (for academic & memberships cards) ---------- */
+.cred-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cred-list li {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  padding-inline-start: 18px;
+  position: relative;
+}
+
+.cred-list li::before {
+  content: '▸';
+  position: absolute;
+  inset-inline-start: 0;
+  color: var(--purple-main);
+  font-size: 0.8rem;
+  top: 1px;
+}
+
+/* Gold variant for membership card */
+.cred-icon-wrap.gold {
+  background: #fff8e1;
+}
+
+/* ---------- SERVICES / SPECIALTIES SECTION ---------- */
+.services-section {
+  padding: var(--section-py) 0;
+  background: linear-gradient(180deg, #f8f0ff 0%, var(--bg-main) 100%);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.service-card {
+  background: var(--bg-card);
+  border: 1px solid var(--bg-border);
+  border-radius: var(--radius-lg);
+  padding: 24px 20px;
+  position: relative;
+  overflow: hidden;
+  transition: all var(--transition-mid);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  inset-inline-start: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--grad-primary);
+  transform: scaleX(0);
+  transform-origin: inset-inline-start;
+  transition: transform var(--transition-mid);
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--purple-light);
+}
+
+.service-card:hover::before {
+  transform: scaleX(1);
+}
+
+.service-icon {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--purple-xlight);
+  border-radius: var(--radius-md);
+}
+
+.service-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.service-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.service-desc {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
 /* ---------- Responsive Design ---------- */
 @media (max-width: 1024px) {
   :root { --section-py: 80px; }
@@ -1319,6 +1431,11 @@ h1, h2, h3, h4, h5, h6 {
   .credentials-grid {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
 
   .footer-grid {
@@ -1349,6 +1466,22 @@ h1, h2, h3, h4, h5, h6 {
   .clinics-grid {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .service-card {
+    padding: 18px 16px;
+    gap: 12px;
+  }
+
+  .service-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 1.3rem;
   }
 
   .footer-grid {
